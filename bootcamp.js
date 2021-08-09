@@ -362,3 +362,34 @@ function findPositiveNumber(array){
 const numbers = [10, 29, 35, -22, 48 ,33]
 console.log(findPositiveNumber(numbers))
 
+
+/*
+   str =  "I love my country";  theke ber korte hobe ekhane koyta word ace  function name wordCount 
+
+*/
+
+function wordCount(sentence){
+
+    let count = 0;
+    for(let i = 0; i < sentence.length; i++){
+        if(sentence[i] == " "){
+            count++;
+        }
+    }
+
+    return count+1;
+
+}
+const str = "I love my country"
+
+console.log(str.split(' ').length)
+console.log(wordCount(str))
+
+
+
+function wordCount(sentence){
+    const word =  sentence.split(' ').length;
+    return word; 
+}
+
+console.log(wordCount("I love my country"));
